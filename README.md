@@ -32,3 +32,9 @@ SELECT
  
   FROM books;
   ```
+  - REPLACE
+  ``` SQL
+  SELECT 
+    REPLACE(pages, 0, 50)
+    FROM books;
+  ```
