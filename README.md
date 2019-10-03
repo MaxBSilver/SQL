@@ -69,3 +69,8 @@ SELECT
   CONCAT('lowercase author name: ', LOWER(author_lname)) AS 'lower'
 FROM books;
 ```
+### SELECTION REFINEMENT
+- DISTINCT returns only the unique names from the query
+```SQL
+SELECT DISTINCT author_lname FROM books;
+```
