@@ -85,8 +85,12 @@ SELECT DISTINCT
 ```
 
 - ORDER BY defaults results to ascending
++ You can use numbers to reference the query args
++ You can add multiple selections to ORDER BY (order by first if they're the same order by second)
 ```SQL
 SELECT title FROM books ORDER BY title;
 SELECT title FROM books ORDER BY title DESC;
 SELECT pages FROM books ORDER BY pages;
+SELECT title, author_fname, author_lname FROM books ORDER BY 1;
+SELECT author_fname, author_lname FROM books ORDER BY author_lname, author_fname;
 ```
