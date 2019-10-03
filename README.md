@@ -94,3 +94,16 @@ SELECT pages FROM books ORDER BY pages;
 SELECT title, author_fname, author_lname FROM books ORDER BY 1;
 SELECT author_fname, author_lname FROM books ORDER BY author_lname, author_fname;
 ```
+
+- SELECT WITH LIKE AND WILD CARDS
+```SQL
+SELECT title, author_fname FROM books WHERE author_fname LIKE '%da%';
+ 
+SELECT title, author_fname FROM books WHERE author_fname LIKE 'da%';
+ 
+SELECT title FROM books WHERE  title LIKE 'the';
+ 
+SELECT title FROM books WHERE  title LIKE '%the';
+ 
+SELECT title FROM books WHERE title LIKE '%the%';
+```
