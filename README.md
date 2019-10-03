@@ -73,4 +73,20 @@ FROM books;
 - DISTINCT returns only the unique names from the query
 ```SQL
 SELECT DISTINCT author_lname FROM books;
+SELECT DISTINCT released_year FROM books ORDER BY released_year ASC;
+
+SELECT DISTINCT 
+  CONCAT_WS(' ', author_fname, author_lname) 
+  AS 'unique_author' FROM books;
+
+SELECT DISTINCT
+  author_fname, author_lname 
+  FROM books;
+```
+
+- ORDER BY defaults results to ascending
+```SQL
+SELECT title FROM books ORDER BY title;
+SELECT title FROM books ORDER BY title DESC;
+SELECT pages FROM books ORDER BY pages;
 ```
