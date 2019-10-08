@@ -13,3 +13,5 @@ FROM books;
  
 SELECT MAX(pages), title
 FROM books;
+
+SELECT title, pages  FROM books WHERE pages = (SELECT MAX(pages) FROM books);
